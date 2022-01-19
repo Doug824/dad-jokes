@@ -19,6 +19,7 @@ class Joke extends Component {
   }
 
   render() {
+    return (
     <div className={`Joke ${this.props.locked ? "Joke-lock" : ""}`}>
       <div className="Joke-votearea">
         <button onClick={this.upVote}>
@@ -38,7 +39,8 @@ class Joke extends Component {
 
       <div className="Joke-text">{this.props.text}</div>
     </div>
-  };
+    );
+  }
 }
 
 
