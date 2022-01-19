@@ -1,12 +1,13 @@
-import React from "react";
+import React, {Component} from "react";
 import JokeList from "./JokeList";
 
-function App() {
-  return (
+class App extends Component {
+  render() {
     <div className="App">
       <JokeList />
     </div>
-  );
+  };
 }
+
 
 export default App;
